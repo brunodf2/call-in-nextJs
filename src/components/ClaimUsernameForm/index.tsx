@@ -5,7 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Form, FormAnnotation } from './styles'
 import { useRouter } from 'next/router'
-import { error } from 'console'
 
 const claimUsernameFormSchema = z.object({
   username: z

@@ -1,4 +1,4 @@
-import { Box, Text, styled } from '@ignite-ui/react'
+import { Box, Heading, Text, styled } from '@ignite-ui/react'
 
 
 export const Container = styled('main', {
@@ -7,6 +7,29 @@ export const Container = styled('main', {
     padding: '0 $4'
 })
 
-export const Header = styled('div', {})
+export const Header = styled('div', {
+    padding: '0 $6',
 
-export const Form = styled(Box, {})
+    [`> ${Heading}`]: {
+        lineHeight: '$base'
+    },
+
+    [`> ${Text}`]: {
+        color: '$gray200',
+        marginBottom: '$6'
+    },
+
+})
+
+export const Form = styled(Box, {
+    marginTop: '$6',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '$4',
+
+    label: {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '$2',
+    }
+})
